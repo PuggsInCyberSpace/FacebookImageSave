@@ -1,0 +1,20 @@
+{
+  "name": "facebooksave",
+  "version": "1.0.0",
+  "description": "Save all images to a folder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Facebook",
+    "save",
+    "images"
+  ],
+  "author": "NativeBit",
+  "license": "ISC",
+  "dependencies": {
+    "@types/chrome": "0.0.133",
+    "types": "^0.1.1"
+  }
+}

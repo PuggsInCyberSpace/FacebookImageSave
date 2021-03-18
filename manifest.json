@@ -1,0 +1,35 @@
+{
+    "name": "Facebook Image Save",
+    "version": "1.0.1",
+    "description": "Save Images from Facebook",
+    "manifest_version": 2,
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "content_scripts": [{
+        "matches": ["https://*.facebook.com/*/photos/*", "https://facebook.com/*/photos/*","https://*.facebook.com/photo*", "https://facebook.com/photo*"],
+        "js": ["content.js"]
+    }],
+    "permissions": [
+        "background",
+        "contextMenus",
+        "tabs",
+        "activeTab",
+        "alarms",
+        "downloads",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "icons" : {
+        "16": "facebooksave.png",
+        "32": "facebooksave.png",
+        "64": "facebooksave.png",
+        "128": "facebooksave.png"
+    },
+    "browser_action": {
+        "default_title": "Autosave images on facebook",
+        "default_popup": "options.html"
+        
+    }
+}
